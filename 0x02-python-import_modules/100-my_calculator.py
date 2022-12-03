@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 def main(argv):
     argc = len(argv)
     ops = {
@@ -16,7 +17,7 @@ def main(argv):
     if op not in '+-*/':
         print('Unknown operator. Available operators: +, -, * and /')
         exit(1)
-    res = ops
+    res = ops[op](a, b)
     print('{:d} {:s} {:d} = {:d}'.format(a, op, b, res))
 
 
