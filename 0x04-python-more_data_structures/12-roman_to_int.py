@@ -35,11 +35,10 @@ def roman_to_int(roman_string):
         'X': 10,
         'I': 1,
 
-                                                                                                                                                                     }
-        result = 0
-            for key in r_nums.keys():
-                if key in roman_string:
-                    result += r_nums[key]
-                    roman_string = roman_string.replace(key, '') 
-           
-           return result
+    }
+    result = 0
+    for key in r_nums.keys():
+        if key in roman_string:
+            result += r_nums[key]
+            roman_string = roman_string.replace(key, '')
+    return result
